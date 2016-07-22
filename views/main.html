@@ -1,0 +1,10 @@
+
+    <label>Nom : </label>
+    <input name="nom" type="text"  ng-model="nom" />
+    <label>Numéro : </label>
+    <input name="num" type="number" ng-model="num" />
+    <button type="button" ng-click='create()'>Envoyer!</button>
+    <br />
+
+    <div ng-repeat="Amis in contact">{{Amis.nom}}{{Amis.num}} <button type="button" ng-click="remove($index)">Supprimer</button> <hr> </div>
+
